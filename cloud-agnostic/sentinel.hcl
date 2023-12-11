@@ -79,6 +79,11 @@ policy "prohibited-provisioners" {
     enforcement_level = "advisory"
 }
 
+policy "restrict-terraform-versions" {
+    source = "./restrict-terraform-versions.sentinel"
+    enforcement_level = "soft-mandatory"
+}
+
 policy "prohibited-resources" {
     source = "./prohibited-resources.sentinel"
     enforcement_level = "advisory"
