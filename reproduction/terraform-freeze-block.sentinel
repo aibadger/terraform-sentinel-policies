@@ -11,11 +11,11 @@
 
 # Criteria 1: Workspace Applies are blocked for all workspaces except for the ones tagged with non-prod tags
 
-enforced = false
+enforced = rule {true}
 
 # Criteria 2: Check if the run is within the hard freeze period
 
-hard_freeze = true
+hard_freeze = rule {true}
 
 # Blocks all Terraform Plans during the hard freeze period for all workspaces except for the ones tagged with non-prod tags. Please refer to this document for more details: https://github.aexp.com/pages/amex-eng/cloud-foundation-docs/docs/tfe/change-management#year-end-change-freeze
 main = rule {
