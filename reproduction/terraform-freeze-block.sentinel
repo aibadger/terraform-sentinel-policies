@@ -11,7 +11,7 @@
 
 # Criteria 1: Workspace Applies are blocked for all workspaces except for the ones tagged with non-prod tags
 
-enforced = rule {true}
+enforced = rule {false}
 
 # Criteria 2: Check if the run is within the hard freeze period
 
