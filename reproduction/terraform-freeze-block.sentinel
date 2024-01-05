@@ -13,8 +13,6 @@ import "tfplan-functions" as plan
 import "tfrun-functions" as run
 import "time" as time
 
-param times
-
 resource_changes = plan.get_num_resource_changed()
 exceptions = ["REDACTED"]
 
@@ -54,9 +52,9 @@ within_time_any = func (timeframes, run_time) {
     return false
 }
 
-hard_freeze = rule {within_time_any(times, run_time)}
+hard_freeze = true
 
 # Blocks all Terraform Plans during the hard freeze period for all workspaces except for the ones tagged with non-prod tags. Please refer to this document for more details: https://github.aexp.com/pages/amex-eng/cloud-foundation-docs/docs/tfe/change-management#year-end-change-freeze
 main = rule {
-	(not (enforced and hard_freeze)) or (is_exempt)
+	(not (hard_freeze))
 }
