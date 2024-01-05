@@ -54,7 +54,7 @@ within_time_any = func (timeframes, run_time) {
 
 hard_freeze = true
 
-# Blocks all Terraform Plans during the hard freeze period for all workspaces except for the ones tagged with non-prod tags. Please refer to this document for more details: https://github.aexp.com/pages/amex-eng/cloud-foundation-docs/docs/tfe/change-management#year-end-change-freeze
+# TEST Comment
 main = rule {
 	(not (hard_freeze))
 }
