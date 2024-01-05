@@ -1,0 +1,86 @@
+terraform_version = "1.5.4"
+
+outputs = {}
+
+resources = {
+	"null_resource.test[0]": {
+		"address":        "null_resource.test[0]",
+		"depends_on":     [],
+		"deposed_key":    "",
+		"index":          0,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "test",
+		"provider_name":  "registry.terraform.io/hashicorp/null",
+		"tainted":        false,
+		"type":           "null_resource",
+		"values": {
+			"id":       "6730329499843367925",
+			"triggers": null,
+		},
+	},
+	"null_resource.test[1]": {
+		"address":        "null_resource.test[1]",
+		"depends_on":     [],
+		"deposed_key":    "",
+		"index":          1,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "test",
+		"provider_name":  "registry.terraform.io/hashicorp/null",
+		"tainted":        false,
+		"type":           "null_resource",
+		"values": {
+			"id":       "488684493240891721",
+			"triggers": null,
+		},
+	},
+	"null_resource.test[2]": {
+		"address":        "null_resource.test[2]",
+		"depends_on":     [],
+		"deposed_key":    "",
+		"index":          2,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "test",
+		"provider_name":  "registry.terraform.io/hashicorp/null",
+		"tainted":        false,
+		"type":           "null_resource",
+		"values": {
+			"id":       "4239523867969838808",
+			"triggers": null,
+		},
+	},
+	"null_resource.test[3]": {
+		"address":        "null_resource.test[3]",
+		"depends_on":     [],
+		"deposed_key":    "",
+		"index":          3,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "test",
+		"provider_name":  "registry.terraform.io/hashicorp/null",
+		"tainted":        false,
+		"type":           "null_resource",
+		"values": {
+			"id":       "99263615403098079",
+			"triggers": null,
+		},
+	},
+	"null_resource.test[4]": {
+		"address":        "null_resource.test[4]",
+		"depends_on":     [],
+		"deposed_key":    "",
+		"index":          4,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "test",
+		"provider_name":  "registry.terraform.io/hashicorp/null",
+		"tainted":        false,
+		"type":           "null_resource",
+		"values": {
+			"id":       "8862968145016851568",
+			"triggers": null,
+		},
+	},
+}
