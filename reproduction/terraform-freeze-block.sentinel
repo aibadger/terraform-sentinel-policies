@@ -13,7 +13,7 @@ import "tfplan-functions" as plan
 import "tfrun-functions" as run
 import "time" as time
 
-# param times
+param times
 
 resource_changes = plan.get_num_resource_changed()
 exceptions = ["REDACTED"]
